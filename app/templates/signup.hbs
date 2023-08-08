@@ -1,0 +1,22 @@
+{{!--
+<Navbar /> --}}
+
+<div class="content">
+    <div class="blok">
+        <div class="blok-heder">
+            <h2> Sign Up </h2>
+        </div>
+        <div class="blok-content">
+            <Input class="name input" @value={{this.name}} placeholder="name" />
+            <Input class="email input" @value={{this.email}} placeholder="email" type="email" />
+            <Input class="password input" @value={{this.password}} type="password" placeholder="password" />
+            {{!-- {{input class="name input" type="text" placeholder="Name" value=this.name}}
+            {{input class="email input" type="email" placeholder="Email" value=this.email}}
+            {{input class="password input" type="password"  placeholder="Password" value=this.password}} --}}
+            <button class="auth-button" {{action "signup" }} type="button">Sign Up</button>
+        </div>
+        <div class="blok-footer">
+            <LinkTo class="link" @route="login"> Have an account? Log in</LinkTo>
+        </div>
+    </div>
+</div>
